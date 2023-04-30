@@ -19,7 +19,7 @@ export default function MainPage() {
         subpage1 이동 버튼입니다.
       </div>
       <div
-        className="subpage1"
+        className="subpage2"
         onClick={() => {
           navigate("/subpage2");
         }}
