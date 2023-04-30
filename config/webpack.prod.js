@@ -5,6 +5,7 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = merge(common, {
   mode: "production",
@@ -28,6 +29,7 @@ module.exports = merge(common, {
     usedExports: true,
     minimize: true,
     minimizer: [
+      new CleanWebpackPlugin(),
       new TerserPlugin({
         terserOptions: {
           compress: {

@@ -16,6 +16,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "public/index.html",
+      showErrors: true,
     }),
     new webpack.ProvidePlugin({
       React: "react",
