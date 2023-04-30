@@ -200,4 +200,6 @@ tsconfig.json
 
 ```
 
-##
+## .gitignore
+
+gitignore에 dist를 추가해 깃허브에 올릴 때는 git에 올라가지 않도록 한다.
